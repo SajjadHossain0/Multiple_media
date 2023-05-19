@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/media"
+        android:title="media">
+        <menu>
+            <item
+                android:id="@+id/facebook"
+                android:title="Facebook"/>
+            <item
+                android:id="@+id/instagram"
+                android:title="Instagram"/>
+            <item
+                android:id="@+id/linkedin"
+                android:title="LinkedIn"/>
+            <item
+                android:id="@+id/twitter"
+                android:title="Twitter"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/video"
+        android:title="Video">
+        <menu>
+            <item
+                android:id="@+id/youtube"
+                android:title="YouTube"/>
+            <item
+                android:id="@+id/tiktok"
+                android:title="TikTok"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/messaging"
+        android:title="Messaging">
+        <menu>
+            <item
+                android:id="@+id/messenger"
+                android:title="Messenger"/>
+            <item
+                android:id="@+id/whatsapp"
+                android:title="WhatsApp"/>
+            <item
+                android:id="@+id/telegram"
+                android:title="Telegram"/>
+            <item
+                android:id="@+id/wechat"
+                android:title="WeChat"/>
+
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/goggle"
+        android:title="Google">
+        <menu>
+            <item
+                android:id="@+id/google"
+                android:title="Google"/>
+            <item
+                android:id="@+id/gmail"
+                android:title="Gmail"/>
+            <item
+                android:id="@+id/drive"
+                android:title="Drive"/>
+            <item
+                android:id="@+id/photos"
+                android:title="Photos"/>
+
+        </menu>
+
+    </item>
+
+</menu>
