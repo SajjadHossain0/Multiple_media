@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
                         replaceFrag(new facebook_frag());break;
                     case R.id.youtube:
                         replaceFrag(new youtube_frag());break;
+                    case R.id.tiktok:
+                        replaceFrag(new tiktok_frag());break;
 
                         default:
                         return true;
