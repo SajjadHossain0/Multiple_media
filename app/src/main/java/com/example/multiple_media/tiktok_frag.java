@@ -16,7 +16,7 @@ import android.webkit.WebViewClient;
  * Use the {@link tiktok_frag#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class tiktok_frag extends Fragment {
+public class tiktok_frag extends Fragment implements OnBackPressedListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -71,5 +71,12 @@ public class tiktok_frag extends Fragment {
         tiktokWeb.loadUrl("https://www.tiktok.com/foryou");
 
         return view;
+    }
+    @Override
+    public void onBackPressed() {
+        WebView tiktokWeb = getView().findViewById(R.id.tiktokWeb);
+        if (tiktokWeb.canGoBack()) {
+            tiktokWeb.goBack();
+        }
     }
 }

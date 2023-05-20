@@ -32,6 +32,9 @@
             android:id="@+id/frameLayout"
             android:layout_below="@+id/appBarLayout"/>
 
+        
+
+
     </RelativeLayout>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"

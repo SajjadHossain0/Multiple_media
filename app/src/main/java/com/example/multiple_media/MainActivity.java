@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         MaterialToolbar AppBar = (MaterialToolbar) findViewById(R.id.AppBar);
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigationView);
 
+
         AppBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,8 +46,29 @@ public class MainActivity extends AppCompatActivity {
                         replaceFrag(new youtube_frag());break;
                     case R.id.tiktok:
                         replaceFrag(new tiktok_frag());break;
+                    case R.id.instagram:
+                        replaceFrag(new instagram_frag());break;
+                    case R.id.linkedin:
+                        replaceFrag(new linkedin_frag());break;
+                    case R.id.twitter:
+                        replaceFrag(new twitter_frag());break;
+                    case R.id.messenger:
+                        replaceFrag(new messenger_frag());break;
+//                        case R.id.whatsapp:
+//                        replaceFrag(new whatsapp_frag());break;
+                    case R.id.telegram:
+                        replaceFrag(new telegram_frag());break;
+//                    case R.id.wechat:
+//                        replaceFrag(new wechat_frag());break;
+//                    case R.id.google:
+//                        replaceFrag(new google_frag());break;
+//                    case R.id.gmail:
+//                        replaceFrag(new gmail_frag());break;
+//                    case R.id.photos:
+//                        replaceFrag(new photos_frag());break;
 
-                        default:
+
+                    default:
                         return true;
                 }
                 return true;
@@ -58,5 +80,14 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frameLayout,fragment);
         fragmentTransaction.commit();
+    }
+    @Override
+    public void onBackPressed() {
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.frameLayout);
+        if (fragment instanceof OnBackPressedListener) {
+            ((OnBackPressedListener) fragment).onBackPressed();
+        } else {
+            super.onBackPressed();
+        }
     }
 }

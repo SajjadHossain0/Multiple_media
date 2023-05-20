@@ -16,7 +16,7 @@ import android.webkit.WebViewClient;
  * Use the {@link facebook_frag#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class facebook_frag extends Fragment {
+public class facebook_frag extends Fragment implements OnBackPressedListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -74,5 +74,12 @@ public class facebook_frag extends Fragment {
         facebookWeb.loadUrl("https://www.facebook.com/");
 
         return view;
+    }
+    @Override
+    public void onBackPressed() {
+        WebView facebookWeb = getView().findViewById(R.id.facebookWeb);
+        if (facebookWeb.canGoBack()) {
+            facebookWeb.goBack();
+        }
     }
 }
