@@ -54,18 +54,18 @@ public class MainActivity extends AppCompatActivity {
                         replaceFrag(new twitter_frag());break;
                     case R.id.messenger:
                         replaceFrag(new messenger_frag());break;
-//                        case R.id.whatsapp:
-//                        replaceFrag(new whatsapp_frag());break;
+                        case R.id.whatsapp:
+                        replaceFrag(new whatsapp_frag());break;
                     case R.id.telegram:
                         replaceFrag(new telegram_frag());break;
-//                    case R.id.wechat:
-//                        replaceFrag(new wechat_frag());break;
-//                    case R.id.google:
-//                        replaceFrag(new google_frag());break;
-//                    case R.id.gmail:
-//                        replaceFrag(new gmail_frag());break;
-//                    case R.id.photos:
-//                        replaceFrag(new photos_frag());break;
+                    case R.id.wechat:
+                        replaceFrag(new wechat_frag());break;
+                    case R.id.google:
+                        replaceFrag(new google_frag());break;
+                    case R.id.gmail:
+                        replaceFrag(new gmail_frag());break;
+                    case R.id.drive:
+                        replaceFrag(new drive_frag());break;
 
 
                     default:

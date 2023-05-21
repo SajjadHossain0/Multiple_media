@@ -66,9 +66,6 @@
             <item
                 android:id="@+id/drive"
                 android:title="Drive"/>
-            <item
-                android:id="@+id/photos"
-                android:title="Photos"/>
 
         </menu>
 
