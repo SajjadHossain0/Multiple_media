@@ -75,9 +75,9 @@ public class wechat_frag extends Fragment implements OnBackPressedListener {
 
     @Override
     public void onBackPressed() {
-        WebView youtubeWeb = getView().findViewById(R.id.youtubeWeb);
-        if (youtubeWeb.canGoBack()) {
-            youtubeWeb.goBack();
+        WebView wechatWeb = getView().findViewById(R.id.wechatWeb);
+        if (wechatWeb.canGoBack()) {
+            wechatWeb.goBack();
         }
     }
 }

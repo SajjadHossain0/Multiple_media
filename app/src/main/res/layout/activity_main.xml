@@ -30,10 +30,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/frameLayout"
-            android:layout_below="@+id/appBarLayout"/>
+            android:layout_below="@+id/appBarLayout">
 
-        
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:textColor="@color/black"/>
 
+        </FrameLayout>
 
     </RelativeLayout>
     <com.google.android.material.navigation.NavigationView
